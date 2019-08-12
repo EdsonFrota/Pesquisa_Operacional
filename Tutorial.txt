@@ -1,0 +1,32 @@
+Maykon Renan P. da Silva     matrícula: 201107629
+Eng. de Computação
+Pesquisa Operacional
+
+Bem esse algoritmo ele foi implemenatado para solucionar problemas de programação linear inteira em geral.
+
+Para executar o metodo B&B são necessários os seguintes requisitos
+
+[a,b,c] = BandB(fo,M,V,C);
+
+Para ilustração vamos utilizar o seguinte problema
+
+Maximizar 21x1 + 11x2
+sujeito as restrições
+7x1 + 4x2 <= 13
+x1, x2>=0
+
+
+fo: função objetivo do problema o formato deve seguir um vetor horizontal
+EX:	fo = [21 11];
+
+M: matriz dos coeficientes das inequações, deve seguir uma matriz em que os coeficientes fiquem em formato de um
+vetor horizontal(coeficientes os membros das colunas e as restrições são as linhas)
+EX:	M = [7 4];
+
+V: Vetor do valor ao qual as restrições são submetidas
+EX:	V = [13];
+
+C: O vetor que indica qual é o tipo da restrição, se for {<= a posição referente a V deve ser -1
+							  >= a posição referente a V deve ser +1
+							  =  a posição referente a V deve ser  0}
+EX:	C = [-1];
